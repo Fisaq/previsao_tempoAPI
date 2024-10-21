@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempo Hoje</title>
+
+    <!--Conexão com os arquivos de estilo e código-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+    <!--Exportando a font Oswald do Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div class="container-principal">
+        <h3>Confira a Previsão do Tempo em qualquer lugar do mundo!</h3>
+        <div class="formulario">
+            <div class="input">
+                <input type="text" placeholder="Informe o nome de uma cidade" id="input-cidade">
+                <button id="btn_pesquisar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+
+        <!--Quando não houver nada pesquisado este container sumirá-->
+        <div id="dados-tempo" class="sumir">  
+            <h2><img id="icone-temp" src="" alt="Condições atuais"></h2>
+            <p id="temperature"><span></span>&deg;C</p>
+
+            <div id="localizacao">
+                <span id="cidade"></span> <img id="pais">
+            </div>
+
+            <div id="detalhes-container">
+                <p id="umidade">
+                    <i class="fa-solid fa-droplet"></i> 
+                    <span></span>
+                </p>
+                <p id="vento">
+                    <i class="fa-solid fa-wind"></i>
+                    <span></span>
+                </p>
+                <p id="chuva">
+                    <i class="fa-duotone fa-solid fa-cloud-rain"></i>
+                    <span></span>
+                </p>
+            </div>
+        </div>      
+    </div>
+</body>
+</html>
